@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Órden del Día</title>
+        <script type = "text/javascript">
+            function nobackbutton() {
+                window.location.hash = "no-back-button";
+                window.location.hash = "Again-No-back-button"; //chrome
+                window.onhashchange = function ()
+                {
+                    window.location.hash = "no-back-button";
+                }; 
+            }
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="css/tenedor.png" />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/landing-page.css" rel="stylesheet">
+        <link href="css/estilacho.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+      <body onload="nobackbutton();">
+
+        <!--Menú de Navegación-->
+        <nav class="navbar navbar-default alinea">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Órden del Día</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="BusquedaFranquiciaConsultaRestaurante.jsp">Buscar Restaurante</a></li>
+                        <li><a href="BusquedaFranquiciaConsultaPlatillo.jsp">Buscar Platillo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- Cabecera -->
+        <a name="about"></a>
+        <div class="intro-header">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <h1>A la Órden del Día</h1>
+                            <h3>La nueva manera de pedir comida a domicilio</h3>
+                            <hr class="intro-divider">
+                            <ul class="list-inline intro-social-buttons"> 
+                                <li>
+                                    <a href="registrar.jsp" class="btn btn-warning btn-lg"><i class="fa fa-list-alt"></i> <span class="network-name">Registrarse</span></a>
+                                </li>
+                                <li>
+                                    <a href="iniciarSesion.html" class="btn btn-default btn-lg"><i class="fa fa-sign-in fa-fw"></i> <span class="network-name">Iniciar Sesión</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <a  name="services"></a>
+        <div class="content-section-a">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Una nueva manera de ordenar comida y hacer reservaciones</h2>
+                        <p class="lead">Con "A la Órden del Día" podrás pedir comida a tu domicilio de manera sencilla. </p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <img class="img-responsive" src="css/ordenar.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="content-section-b">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Descubre</h2>
+                        <p class="lead">Encuentra un nuevo lugar favorito para comer cerca de ti y prueba algo distinto cada día.</p>
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <img class="img-responsive" src="css/descubre.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="content-section-a">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Administra tu negocio</h2>
+                        <p class="lead">Nuestro software ofrece las herramientas necesarias para administrar tu negocio, ya sea grande o chico.</p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <img class="img-responsive" src="css/administra.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+<div class="content-section-b">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Soporte Técnico</h2>
+                        <p class="lead">¿El sistema no ha funcionado? <a href="soporte.jsp">Solucionalo Aquí</a></p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <img class="img-responsive" src="css/soporte.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+            <br><br>
+
+        <a  name="contact"></a>
+        <div class="banner">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Comienza ahora:</h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="list-inline banner-social-buttons">
+                            <li>
+                                <a href="ConsultaRestaurante.jsp" class="btn btn-success btn-lg"><i class="fa fa-search fa-fw"></i> <span class="network-name">Buscar Restaurante</span></a>
+                            </li>
+                            <li>
+                                <a href="BusquedaRestauranteConsultaPlatillo.jsp" class="btn btn-success btn-lg"><i class="fa fa-spoon fa-fw"></i> <span class="network-name">Buscar Platillo</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="copyright text-muted small">Copyright &copy;  GreenNote 2015. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--Librerias jQuery y javaScript-->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+
+</html>

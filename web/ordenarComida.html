@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Órden del Día</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="shortcut icon" href="css/tenedor.png" />
+        <!--Con Internet
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        -->
+    </head>
+    <body>
+        <!--Menú de Navegación-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Órden del Día</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="registrar.html">Registrarse</a></li>
+                        <li><a href="iniciarSesion.html">Iniciar Sesión</a></li>
+                        <li><a href="buscarRestaurante.html">Buscar Restaurante</a></li>
+                        <li><a href="buscarPlatillo.html">Buscar Platillo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Formulario-->
+        <div class="container">
+            <center><h3>Ordenar Comida</h3></center>
+            <hr>
+        </div>  
+        <div class="container">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="restautant">Restaurante</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="restaurant" name="restaurante" placeholder="El Encanto" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="phone">Platillo</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" required>
+                            <!--Cuando se Ingrese el nombre del restaurante el combo box debe de desplegar todos los platillos, si esta muy ambicioso pues lo cambiamos-->
+                            <option value="0">Selecciona Una Opción</option>
+                            <option value="1">Comida1</option>
+                            <option value="2">Comida2</option>
+                            <option value="3">Comida3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">        
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Ordenar</button>
+                    </div>
+                </div>
+                <div class="alert alert-success">
+                    <strong>Su órden ha sido Porcesada con Éxito</strong> Su estomago ahora puede estar más seguro.
+                </div>
+                <div class="form-group">        
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <a href="menu.html"><button type="button" class="btn btn-warning">Botón Provisional Menú</button></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>
+

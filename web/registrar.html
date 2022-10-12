@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Órden del Día</title>
+         <script type = "text/javascript" src="js/validaciones.js">
+        </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="shortcut icon" href="css/tenedor.png" />
+        <!--Con Internet
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        -->
+    </head>
+    <body>
+        <!--Menú de Navegación-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Órden del Día</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="registrar.html">Registrarse</a></li>
+                        <li><a href="iniciarSesion.html">Iniciar Sesión</a></li>
+                        <li><a href="buscarRestaurante.html">Buscar Restaurante</a></li>
+                        <li><a href="buscarPlatillo.html">Buscar Platillo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Formulario-->
+        <div class="container">
+         
+            <center><h3>Registro</h3></center>
+            <hr>
+        </div>
+        <div class="container">
+            <form class="form-horizontal" role="form" name="Alta" method="Post" Action="AltaUsuario">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="name">Nombre</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" name="nombre"  onkeypress="return letraVal(event)" placeholder="Ingresa tu Nombre" required onpaste="return false;">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="address">Dirección</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="address" name="direccion"  placeholder="Mar Mediterrano Popotla no 984" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Correo</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" name="correo" placeholder="ejemplo@gmail.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Contraseña:</label>
+                    <div class="col-sm-10">          
+                        <input type="password" class="form-control" id="contrasena" name="pass" placeholder="Ingresa tu Contraseña" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="phone">Teléfono</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="phone" name="telefono" placeholder="8794568728"  onpaste="return false;" onkeypress="return solonumeros1(event)" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="phone">Tipo de Teléfono</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" NAME="tipo" required>
+                            <option value="0">Selecciona Una Opción</option>
+                            <option value="1" >Casa</option>
+                            <option value="2">Célular</option>
+                            <option value="3">Oficina</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">        
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Registrarse</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

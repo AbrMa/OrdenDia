@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Órden del Día</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="shortcut icon" href="css/tenedor.png" />
+        <!--Con Internet
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        -->
+    </head>
+    <body>
+        <!--Menú de Navegación-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Órden del Día</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="registrar.jsp">Registrarse</a></li>
+                        <li><a href="ConsultaRestaurante.jsp">Buscar Restaurante</a></li>
+                        <li><a href="BusquedaRestauranteConsultaPlatillo.jsp">Buscar Platillo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Formulario-->
+        <div class="container">
+            <center><h3>Iniciar Sesión</h3></center>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Bienvenido</h2>
+                <p class="lead">Con a la Orden del Día podrás administrar restaurantes y ordenar comida desde la comodidad de tu casa .</p>
+                
+                <img class="img-responsive" src="css/hamburger.jpg" alt="">
+                
+            </div>
+            <div class="col-sm-5">
+                <br>
+                <div class="panel panel-info">
+                     <div class="panel-heading">Iniciar Sesión de Usuario</div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" method="post" role="form" action="Login2" name="Sesion">
+                            <div class="panel-body">
+                                <br>
+                                <label class="control-label col-sm-2" for="email">Correo</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="email" name="correo" placeholder="ejemplo@gmail.com" required>
+                                </div>
+                            </div>
+                            <div class="panel-body">        
+                                    <br> <!-- Sirve para dar espacio  -->
+                            </div> 
+                            <div class="panel-body">
+                                <label class="control-label col-sm-2" for="pwd">Contraseña</label>
+                                <div class="col-sm-10">          
+                                    <input type="password" class="form-control" name="pass" id="contrasena" placeholder="Ingresa tu Contraseña" required>
+                                </div>
+                            </div>
+                            <div class="panel-body">        
+                                    <br> <!-- Sirve para dar espacio  -->
+                            </div> 
+                            <div class="panel-bodyp">        
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-info">Iniciar Sesión</button>
+                                </div>
+                            </div>
+                            <div class="panel-body">        
+                                    <br> <!-- Sirve para dar espacio  -->
+                            </div> 
+                            <div class="panel-body">        
+                                <center>
+                                    <a href="Correo.jsp">¿Olvidaste tu Contraseña?</a>
+                                </center>
+                            </div> 
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="copyright text-muted small">Copyright &copy;  GreenNote 2015. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
